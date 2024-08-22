@@ -5,13 +5,14 @@ class OnboardingScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('OnboardingScreen'),
-      ),
-      body: Column(
-        children: [
-          Container(),
-        ],
+      body: SingleChildScrollView(
+        child: SafeArea(
+          child: Column(
+            children: [
+              Text('data'),
+            ],
+          ),
+        ),
       ),
     );
   }
